@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temp Graph</title>
+</head>
+<body>
+    <script>
+        getData();
+        async function getData() {
+            const response = await fetch('./test.csv');
+            const data = await response.text();
+            console.log(data);
+        }
+    </script>
+</body>
+</html>
